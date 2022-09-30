@@ -38,17 +38,3 @@
 }
 
 
-.person{
-  border: 2px solid blue;
-  background-color: #61dafb;
-  border-radius: 15px;
-  padding: 10px;
-  margin: 5px;
-}
-.cart{
-  border: 2px solid rgb(8, 8, 8);
-  background-color:coral;
-  border-radius: 15px;
-  padding: 10px;
-  margin: 5px;
-}

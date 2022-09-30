@@ -1,11 +1,17 @@
 .study-section{
     display: grid;
     grid-template-columns: 4fr 2fr;
+    /* grid-gap: 20px; */
+     
 }
 .display-cart{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
+    background-color:#E5E5E5 
     
-    
+}
+.profile-section{
+    background-color:#E5E5E5 ;
+   
 }

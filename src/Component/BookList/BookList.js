@@ -7,7 +7,7 @@ import "./BookList.css"
 const BookList = () => {
     const [bookList, setBookList] = useState([])
     const [profile, setProfile] = useState({})
-    // console.log(profile)
+    
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -29,8 +29,8 @@ const BookList = () => {
                 </div>
 
             </div>
-            <div className="study-time">
-                <h1>profile ggggg</h1>
+            <div className="profile-section ms-5">
+    
                 <Profile profile={profile}></Profile>
             </div>
 
