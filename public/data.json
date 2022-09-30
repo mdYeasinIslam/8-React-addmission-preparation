@@ -1,0 +1,45 @@
+[
+    {
+        "id":1,
+        "img": "./images/math.png",
+        "name": "Higher Math",
+        "details": "Easy topics can be different for different people.However,important topics are the same . · Vector algebra,probablity ,matrix and determinants have a set pattern ...",
+        "time": 1
+    },
+    {
+        "id":2,
+        "img": "./images/physics.jpg",
+        "name": "Physics",
+        "details": "It is now time to dive deeper into the world of physics with topics from class 12 (NCERT) such as electrostatics, electricity, magnetism, electromagnetic ...",
+        "time": 1
+    },
+    {
+        "id":3,
+        "img": "./images/chemistry.jpg",
+        "name": "Chemistry",
+        "details": "The important topics of class 12 chemistry board exam are: 1)Solid State - Packing 2)Solutions- All the Colligative Props 3)Electrochem- Nernst eqn and all ...",
+        "time": 1
+    },
+    {
+        "id":4,
+        "img": "./images/biology.png",
+        "name": "Biology",
+        "details": "The NCERT book for class 12 Biology prescribed by CBSE consists of a total of 16 chapters. Talk about various concepts in detail like reproduction, genetics, ...",
+        "time": 1
+    },
+    {
+        "id":5,
+        "img": "./images/english.jpg",
+        "name": "English",
+        "details": "Can I prepare CBSE class 12 English in 4 days if I study for 17 hours? ... IT WILL HELP YOU TO GET GOOD MARKS AS IF YOU HAVE STUDIED SOMETHING PREVIOUSLY...",
+        "time": 1
+    },
+    {
+        "id":6,
+        "img": "./images/ict.jpg",
+        "name": "ICT",
+        "details": "Information technology (IT) is a broad professional category covering functions including building communications networks, safeguarding data and information, and troubleshooting computer problems...",
+        "time": 1
+    }
+    
+]

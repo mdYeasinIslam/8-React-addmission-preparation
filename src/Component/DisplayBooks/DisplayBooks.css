@@ -1,0 +1,12 @@
+.single-cart img{
+   width: 250px;
+   height: 250px;
+   margin: auto;
+   padding-top: 10px;
+   border-radius: 20px;
+  
+}
+.single-cart{
+    border: 2px solid gray;
+   border-radius: 10px; 
+}
