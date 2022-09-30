@@ -1,17 +1,17 @@
 import React from 'react';
 import "./DisplayBooks.css"
 const DisplayBooks = (props) => {
-    console.log(props.book.img)
+    // console.log(props.book.img)
     return (
-        <div class="single-cart card" >
+        <div className="single-cart card" >
             
-            <img  src={props.book.img} class="img-fluid card-img-top" alt="" />
+            <img  src={props.book.img} className="img-fluid card-img-top" alt="" />
             
-            <div class="card-body">
-                <h3 class="card-title">{props.book.name}</h3>
+            <div className="card-body">
+                <h3 className="card-title">{props.book.name}</h3>
                 <p>{props.book.details}</p>
-                <p><strong class="card-text">Time: {props.book.time}hr</strong></p>
-                <button class="btn btn-primary">Add me</button>
+                <p><strong className="card-text">Time: {props.book.time}hr</strong></p>
+                <button className="btn btn-primary">Add me</button>
             </div>
         </div>
     );
