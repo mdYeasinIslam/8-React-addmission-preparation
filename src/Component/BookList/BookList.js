@@ -15,7 +15,7 @@ const BookList = () => {
         <div className='study-section'>
             <div className="book-list"> 
             <h4 className='fw-bold fs-4'>Select per day exercise</h4>
-            <div className='display-cart'>
+            <div className='display-cart mt-5 mb-5'>
                {
                 bookList.map(book=><DisplayBooks key={book.id} book={book}></DisplayBooks>)
              } 
