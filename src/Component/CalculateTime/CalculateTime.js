@@ -1,32 +1,30 @@
 import React from 'react';
 import { useState } from 'react';
+import { addLocal } from '../../utilities/addLocal';
+import "./CalculateTime.css"
 
 const CalculateTime = ({ bookDetails }) => {
-    // console.log(bookDetails)
     const [breakTime, setBreaktime] = useState(0)
-    console.log(breakTime)
+    
     let total = 0;
     for (const details of bookDetails) {
         total = (total + details.time)
     }
-    // let sumOfBreakTime2=sum();
+  
 
     const sum = (time) => {
-        let sumOfBreakTime = 0;
-        sumOfBreakTime = sumOfBreakTime + time
-        // console.log('hhhh',time,sumOfBreakTime)
-        setBreaktime(sumOfBreakTime)
+       addLocal(time)
+        setBreaktime(time)
     }
-    // console.log(sumOfBreakTime)
     return (
         <div>
             <div className='mt-5 ms-5'>
                 <h3 >Break Time:</h3>
                 <div className='break-time me-4 d-flex justify-content-around'>
                 <button onClick={() => sum(10)}> 10 min</button>
-                <button onClick={() => sum(20)}>15 min</button>
-                <button onClick={() => sum(30)}>20 min</button>
-                <button onClick={() => sum(40)}>25 min</button>
+                <button onClick={() => sum(15)}>15 min</button>
+                <button onClick={() => sum(20)}>20 min</button>
+                <button onClick={() => sum(25)}>25 min</button>
             </div>
             </div>
             
