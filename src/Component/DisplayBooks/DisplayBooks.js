@@ -1,18 +1,21 @@
 import React from 'react';
+// import CalculateTime from '../CalculateTime/CalculateTime';
 import "./DisplayBooks.css"
 const DisplayBooks = (props) => {
-    // console.log(props.book.img)
+    const { img, name, time } = props.book
+// console.log(props.book)
     return (
         <div className="single-cart card" >
-            
-            <img  src={props.book.img} className="img-fluid card-img-top" alt="" />
-            
+
+            <img src={img} className="img-fluid card-img-top" alt="" />
+
             <div className="card-body">
-                <h3 className="card-title">{props.book.name}</h3>
+                <h3 className="card-title">{name}</h3>
                 <p>{props.book.details}</p>
-                <p><strong className="card-text">Time: {props.book.time}hr</strong></p>
-                <button className="btn btn-primary">Add me</button>
-            </div>
+                <p><strong className="card-text">Time: {time}hr</strong></p>
+                <button onClick={()=>props.addTime(props.book)} className="btn btn-primary">Add me</button>
+            </div> 
+           
         </div>
     );
 };
