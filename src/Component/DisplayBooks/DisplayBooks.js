@@ -1,5 +1,5 @@
 import React from 'react';
-// import CalculateTime from '../CalculateTime/CalculateTime';
+
 import "./DisplayBooks.css"
 const DisplayBooks = (props) => {
     const { img, name, time } = props.book
@@ -12,7 +12,7 @@ const DisplayBooks = (props) => {
             <div className="card-body">
                 <h3 className="card-title">{name}</h3>
                 <p>{props.book.details}</p>
-                <p><strong className="card-text">Time: {time}hr</strong></p>
+                <p><strong className="card-text">Time: {time}min</strong></p>
                 <button onClick={()=>props.addTime(props.book)} className="btn btn-primary">Add me</button>
             </div> 
            
