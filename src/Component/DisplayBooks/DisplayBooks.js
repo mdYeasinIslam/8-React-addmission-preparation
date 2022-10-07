@@ -13,7 +13,7 @@ const DisplayBooks = (props) => {
                 <h3 className="card-title">{name}</h3>
                 <p>{props.book.details}</p>
                 <p><strong className="card-text">Time: {time}min</strong></p>
-                <button onClick={()=>props.addTime(props.book)} className="btn btn-primary">Add me</button>
+                <button onClick={()=>props.addTime(props.book)} className="btn btn-primary">Add to Routine</button>
             </div> 
            
         </div>
