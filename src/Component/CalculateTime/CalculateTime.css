@@ -8,3 +8,12 @@
 .break-time button:hover{
    background-color: darkgreen;
 }
+.break-time button.active{
+    background-color: darkgreen;
+}
+@media screen and (max-width:675px) {
+    .break-time button{
+        margin-right: 5px;
+        border-radius: 5px;
+    }
+}

@@ -12,8 +12,8 @@
     
 }
 .profile-section{
-    background-color:#E5E5E5 ;
-   
+     background-color:#E5E5E5 ;
+     margin-left: 40px;
 }
 @media screen and (max-width:675px) {
     .display-cart{
@@ -25,5 +25,19 @@
         grid-template-columns: repeat(1,1fr);
         margin: auto;
        
+    }
+   .profile-section{
+   
+    margin-left: 0px;
+   
+}
+}
+@media screen and (min-width:677px) and (max-width:777px){
+.display-cart {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+     .profile-section{
+        margin-left: 40px;
     }
 }

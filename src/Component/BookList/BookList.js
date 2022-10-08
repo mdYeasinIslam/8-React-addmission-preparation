@@ -28,16 +28,16 @@ const BookList = () => {
     return (
         <div className='study-section'>
             <div className="book-list">
-                <h4 className='fw-bold fs-4'>Everyday's Routine</h4>
+                <h4 className='fw-bold fs-4'>Everyday's Routine:</h4>
                 <div className='display-cart mt-5 mb-5'>
-                    {
+                    { 
                         bookList.map(book => <DisplayBooks 
                             key={book.id} book={book} addTime={addTime}
                         ></DisplayBooks>)
                     }
                 </div>
             </div>
-            <div className="profile-section ms-5">
+            <div className="profile-section ">
                 <Profile profile={profile}></Profile>
                 <CalculateTime bookDetails={bookDetails}></CalculateTime>
             </div>

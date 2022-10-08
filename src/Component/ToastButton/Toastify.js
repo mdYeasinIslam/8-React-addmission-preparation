@@ -7,7 +7,7 @@ import "./Tostify.css"
 const Toastify = () => {
 
     const notify = ()=>{
-        toast('Congratulations,You task is completed!!!!')
+        toast('Congratulations,Your task is completed!!!!')
     }
     return (
         <div className=''>

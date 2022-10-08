@@ -8,6 +8,7 @@ import "./CalculateTime.css"
 
 const CalculateTime = ({ bookDetails }) => {
     const [breakTime, setBreaktime] = useState([0])
+    const [activeBtn, setActiveBtn] = useState(null);
     // console.log(breakTime)
     let total = 0;
     for (const details of bookDetails) {
@@ -23,17 +24,18 @@ const CalculateTime = ({ bookDetails }) => {
 
     const sum = (time) => {
         addLocal(time)
-        setBreaktime(time)  
+        setBreaktime(time);
+        setActiveBtn(time)  
     }
-    return (
+    return ( 
         <div>
             <div className='mt-5 ms-5'>
                 <h3 >Break Time:</h3>
                 <div className='break-time me-4 d-flex justify-content-around'>
-                <button onClick={() => sum(0)}>0 min</button>
-                <button onClick={() => sum(10)}> 10 min</button>
-                <button onClick={() => sum(15)}>15 min</button>
-                <button onClick={() => sum(20)}>20 min</button>
+                <button className={activeBtn === 0 ? 'active' : ''} onClick={() => sum(0)}>0 min</button>
+                <button className={activeBtn === 10 ? 'active' : ''} onClick={() => sum(10)}> 10 min</button>
+                <button className={activeBtn === 15 ? 'active' : ''} onClick={() => sum(15)}>15 min</button>
+                <button className={activeBtn === 20 ? 'active' : ''} onClick={() => sum(20)}>20 min</button>
             </div>
             </div>
             
