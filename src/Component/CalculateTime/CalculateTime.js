@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { addLocal, displayLocal } from '../../utilities/addLocal';
+import Question from '../Q-answer/Question';
 import Toastify from '../ToastButton/Toastify';
 import "./CalculateTime.css"
 
@@ -50,6 +51,7 @@ const CalculateTime = ({ bookDetails }) => {
                 </div>
             </div>
             <Toastify></Toastify>
+            <Question></Question>
         </div>
     );
 };

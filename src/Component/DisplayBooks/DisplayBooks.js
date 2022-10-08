@@ -3,7 +3,7 @@ import React from 'react';
 import "./DisplayBooks.css"
 const DisplayBooks = (props) => {
     const { img, name, time } = props.book
-// console.log(props.book)
+
     return (
         <div className="single-cart card" >
 
